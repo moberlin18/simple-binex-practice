@@ -1,14 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <sys/types.h>
 
 int main() {
-    printf("A little tougher this time...");
-    int secret = 0xdeadbeef;
-    char buff[30];
-    if (secret == 0x1337) {printf("Wow, you got it!\n"); }
-    else {printf("lol u thought\n");}
-    return 0;
+
+    int target;
+    char buffer[64];
+
+    target = 0;
+    printf("*Earth sends a message to you confirming HAL was most likely in error*\n");
+    gets(buffer);
+
+    if (target ==  0x41424344) 
+    {
+        printf("\nCongrats! *You confer privately with your fellow astronaut about HAL's error*\n");
+    } 
+    else 
+    {
+        printf("\n*HAL convinces you that an error was made by Earth, not HAL*\n");
+    }
+
 }
