@@ -1,0 +1,1 @@
+#python3 -c "print('A'*(0x21))" | ./ex_1
